@@ -23,9 +23,9 @@ function CheckoutForm({ stripe, totalCost }) {
 
       if (response.ok) {
         setStatus('complete');
-        console.log(response)
       } else {
         throw new Error('Network response was not ok.');
+        console.log(response)
       }
     } catch (err) {
       setStatus('error');
